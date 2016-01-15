@@ -14,7 +14,7 @@
 }
 
 .yellowStoneBG {
-  background-image: url(../img/);
+  background-image: url(../img/waterfall.jpg);
 }
 
 .newYorkBG {
@@ -23,4 +23,8 @@
 
 #newYork {
   color: #ebff00;
+}
+
+#yellowStone {
+  color: #20aacf;
 }
