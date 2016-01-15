@@ -7,19 +7,19 @@ $(document).ready(function() {
       userAnswer += parseInt($("select#" + answer).val());
     });
 
-    if (userAnswer <= 9 && userAnswer >=5) {
+    if (userAnswer <= 8 && userAnswer >=5) {
       $("#resultsJumbo").show();
       $("#resultsJumbo").addClass("hawaiiBG")
       $("#hawaii").fadeIn(1500);
       $(".introQuest").hide();
     }
-    else if (userAnswer >= 13) {
+    else if (userAnswer >= 12) {
       $("#resultsJumbo").show();
       $("#resultsJumbo").addClass("newYorkBG")
       $("#newYork").fadeIn(1500);
       $(".introQuest").hide();
     }
-    else if (userAnswer >= 10 && userAnswer <= 12){
+    else if (userAnswer >= 9 && userAnswer <= 11){
       $("#resultsJumbo").show();
       $("#resultsJumbo").addClass("yellowStoneBG")
       $("#yellowStone").fadeIn(1500);
