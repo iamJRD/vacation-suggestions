@@ -10,19 +10,19 @@ $(document).ready(function() {
     if (userAnswer <= 9 && userAnswer >=5) {
       $("#resultsJumbo").show();
       $("#resultsJumbo").addClass("hawaiiBG")
-      $("#hawaii").show();
+      $("#hawaii").fadeIn(1500);
       $(".introQuest").hide();
     }
     else if (userAnswer >= 13) {
       $("#resultsJumbo").show();
       $("#resultsJumbo").addClass("newYorkBG")
-      $("#newYork").show();
+      $("#newYork").fadeIn(1500);
       $(".introQuest").hide();
     }
     else if (userAnswer >= 10 && userAnswer <= 12){
       $("#resultsJumbo").show();
       $("#resultsJumbo").addClass("yellowStoneBG")
-      $("#yellowStone").show();
+      $("#yellowStone").fadeIn(1500);
       $(".introQuest").hide();
     }
     else {
