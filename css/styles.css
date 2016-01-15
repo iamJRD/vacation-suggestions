@@ -1,7 +1,10 @@
-.jumbotron {
+#introJumbo {
   background-image: url(../img/cloud.jpg);
 }
 
-#locationHide {
+#hawaii,
+#yellowStone,
+#newYork,
+#resultsJumbo {
   display: none;
 }

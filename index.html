@@ -5,74 +5,74 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" style="text/css">
     <link href="css/styles.css" rel="stylesheet" style="text/css">
     <script src="js/jquery-1.12.0.js"></script>
-    <script src="js/bootsrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Travel Calculator</title>
   </head>
   <body>
-    <div class="container text-center">
-      <div class="jumbotron img-responsive">
+    <div class="container text-center introQuest">
+      <div class="jumbotron img-responsive" id="introJumbo">
         <h1>Where should you travel?</h1>
         <p>Answer the questions below to find out!</p>
       </div>
     </div>
 <!-- FORM -->
-    <div class="container">
+    <div class="container introQuest">
       <div id="blanks">
         <form id="questions">
 <!-- QUESTIONS -->
           <div class="form-group">
-            <label>Question 1</label>
+            <label for="plan">Question 1</label>
             <p>When I travel I like to...</p>
-            <select class="form-control" id="question1">
+            <select id="plan" class="form-control">
               <option disabled selected></option>
-              <option value="hot">...kick back and relax.</option>
-              <option value="nature">...explore nature of a different area.</option>
-              <option value="city">...experience the nightlife.</option>
+              <option value="1">...kick back and relax.</option>
+              <option value="2">...explore nature of a different area.</option>
+              <option value="3">...experience the nightlife.</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label>Question 2</label>
+            <label for="sleep">Question 2</label>
             <p>Where do you like to sleep while travelling?</p>
-            <select class="form-control" id="question2">
+            <select id="sleep" class="form-control">
               <option disabled selected></option>
-              <option value="hot">In a resort</option>
-              <option value="nature">Under the stars</option>
-              <option value="city">In the heartbeat of the action</option>
+              <option value="1">In a resort</option>
+              <option value="2">Under the stars</option>
+              <option value="3">In the heartbeat of the action</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label>Question 3</label>
-            <p></p>
-            <select class="form-control" id="question3">
+            <label for="food">Question 3</label>
+            <p>How do you like to dine when you're travelling?</p>
+            <select id="food" class="form-control">
               <option disabled selected></option>
-              <option value="hot"></option>
-              <option value="nature"></option>
-              <option value="city"></option>
+              <option value="1">Eating fish caught out of the same ocean your swam in that day.</option>
+              <option value="2">Cooking for yourself over the open fire.</option>
+              <option value="3">Eating exquiste food at a fine dining restaurant.</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label>Question 4</label>
-            <p></p>
-            <select class="form-control" id="question4">
+            <label for="drinks">Question 4</label>
+            <p>What type of cocktail would you prefer on your trip?</p>
+            <select id="drinks" class="form-control">
               <option disabled selected></option>
-              <option value="hot"></option>
-              <option value="nature"></option>
-              <option value="city"></option>
+              <option value="1">Something fruity and tropical; A mojito or daquari</option>
+              <option value="2">Whiskey that I backpack in myself</option>
+              <option value="3">Something modern; A manhattan or cosmo</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label>Question 5</label>
-            <p></p>
-            <select class="form-control" id="question5">
+            <label for="distance">Question 5</label>
+            <p>How would you prefer to get to your destination?</p>
+            <select id="distance" class="form-control">
               <option disabled selected></option>
-              <option value="hot"></option>
-              <option value="nature"></option>
-              <option value="city"></option>
+              <option value="1">As long as a plane can get me close, I'm ready!</option>
+              <option value="2">As far as my legs can take me.</option>
+              <option value="3">I would like to not go over water.</option>
             </select>
           </div>
 <!-- QUESTIONS END -->
@@ -83,28 +83,27 @@
 <!-- FORM END -->
     <div class="container text-center">
 <!-- HIDDEN DESTINATIONS -->
-      <div id="locationHide">
-        <div id="hawaii">
-          <h4>You should consider going to:</h4>
-          <h2>Hawaii</h2>
-          <p></p>
-          <img src="" alt="" />
-        </div>
+<div class="jumbotron" id="resultsJumbo">
 
-        <div id="nature">
-          <h4>You should consider going to:</h4>
-          <h2></h2>
-          <p></p>
-          <img src="" alt="" />
-        </div>
 
-        <div id="newYork">
-          <h4>You should consider going to:</h4>
-          <h2>New York</h2>
-          <p></p>
-          <img src="" alt="" />
-        </div>
+      <div id="hawaii">
+        <h4>You should consider going to:</h4>
+        <h2>Hawaii</h2>
+        <p></p>
       </div>
+
+      <div id="yellowStone">
+        <h4>You should consider going to:</h4>
+        <h2>Yellowstone National Park</h2>
+        <p></p>
+      </div>
+
+      <div id="newYork">
+        <h4>You should consider going to:</h4>
+        <h2>New York</h2>
+        <p></p>
+      </div>
+</div>
 <!-- HIDDEN DESTINATIONS -->
     </div>
 
