@@ -7,13 +7,13 @@
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Travel Calculator</title>
+    <title>Vacation Calculator</title>
   </head>
   <body>
     <div class="container text-center introQuest">
       <div class="jumbotron img-responsive" id="introJumbo">
         <h1>Where should you travel?</h1>
-        <p>Answer the questions below to find out!</p>
+        <p><span>Answer the questions below to find out!</span></p>
       </div>
     </div>
 <!-- FORM -->
@@ -22,10 +22,10 @@
         <form id="questions">
 <!-- QUESTIONS -->
           <div class="form-group">
-            <label for="plan">Question 1</label>
+            <label for="plan"><span>Question 1</span></label>
             <p>When I travel I like to...</p>
             <select id="plan" class="form-control">
-              <option disabled selected></option>
+              <option disabled selected>--- Select One ---</option>
               <option value="1">...kick back and relax.</option>
               <option value="2">...explore nature of a different area.</option>
               <option value="3">...experience the nightlife.</option>
@@ -33,10 +33,10 @@
           </div>
 
           <div class="form-group">
-            <label for="sleep">Question 2</label>
-            <p>Where do you like to sleep while travelling?</p>
+            <label for="sleep"><span>Question 2</span></label>
+            <p>Where do you like to sleep while traveling?</p>
             <select id="sleep" class="form-control">
-              <option disabled selected></option>
+              <option disabled selected>--- Select One ---</option>
               <option value="1">In a resort</option>
               <option value="2">Under the stars</option>
               <option value="3">In the heartbeat of the action</option>
@@ -44,70 +44,69 @@
           </div>
 
           <div class="form-group">
-            <label for="food">Question 3</label>
-            <p>How do you like to dine when you're travelling?</p>
+            <label for="food"><span>Question 3</span></label>
+            <p>How do you like to dine when you're traveling?</p>
             <select id="food" class="form-control">
-              <option disabled selected></option>
-              <option value="1">Eating fish caught out of the same ocean your swam in that day.</option>
+              <option disabled selected>--- Select One ---</option>
+              <option value="1">Eating fish caught out of the same ocean you swam in that day.</option>
               <option value="2">Cooking for yourself over the open fire.</option>
               <option value="3">Eating exquiste food at a fine dining restaurant.</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="drinks">Question 4</label>
-            <p>What type of cocktail would you prefer on your trip?</p>
+            <label for="drinks"><span>Question 4</span></label>
+            <p>What type of adult beverage would you prefer on your trip?</p>
             <select id="drinks" class="form-control">
-              <option disabled selected></option>
+              <option disabled selected>--- Select One ---</option>
               <option value="1">Something fruity and tropical; A mojito or daquari</option>
-              <option value="2">Whiskey that I backpack in myself</option>
+              <option value="2">Whiskey/beer that I backpack in myself</option>
               <option value="3">Something modern; A manhattan or cosmo</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="distance">Question 5</label>
+            <label for="distance"><span>Question 5</span></label>
             <p>How would you prefer to get to your destination?</p>
             <select id="distance" class="form-control">
-              <option disabled selected></option>
+              <option disabled selected>--- Select One ---</option>
               <option value="1">As long as a plane can get me close, I'm ready!</option>
               <option value="2">As far as my legs can take me.</option>
               <option value="3">I would like to not go over water.</option>
             </select>
           </div>
 <!-- QUESTIONS END -->
-          <button type="submit" class="btn btn-primary">Blast off!</button>
+          <button type="submit" class="btn btn-primary">Take flight!</button>
         </form>
       </div>
     </div>
 <!-- FORM END -->
     <div class="container text-center">
 <!-- HIDDEN DESTINATIONS -->
-<div class="jumbotron img-responsive" id="resultsJumbo">
+      <div class="jumbotron img-responsive" id="resultsJumbo">
 
-      <div id="hawaii">
-        <h4>You should consider going to:</h4>
-        <h1>Hawaii</h1>
-        <p>The fresh, floral air energizes you. The warm, tranquil waters refresh you. The breathtaking, natural beauty renews you. Look around. There’s no place on earth like Hawaii. Whether you're a new visitor or returning, our six unique islands offer distinct experiences that will entice any traveler. We warmly invite you to explore our islands and discover your ideal travel experience.</p>
-        <a class="btn btn-danger" href="http://www.kayak.com/flight-routes/United-States-US0/Honolulu-HNL" role="button">Click here to check out flights!</a>
-      </div>
+        <div id="hawaii">
+          <h4>You should consider going to:</h4>
+          <h1>Hawaii</h1>
+          <p>The fresh, floral air energizes you. The warm, tranquil waters refresh you. The breathtaking, natural beauty renews you. Look around. There’s no place on earth like Hawaii. Whether you're a new visitor or returning, our six unique islands offer distinct experiences that will entice any traveler. You are warmly invited to explore the islands and discover your ideal travel experience.</p>
+          <a class="btn btn-danger" href="http://www.kayak.com/flight-routes/United-States-US0/Honolulu-HNL" role="button">Click here to check out flights!</a>
+        </div>
 
-      <div id="yellowStone">
-        <h4>You should consider going to:</h4>
-        <h1>Yellowstone National Park</h1>
-        <p>Yellowstone National Park is the flagship of the National Park Service and a favorite to millions of visitors each year. The park is a major destination for all members of the family. By driving the grand loop road, visitors can view the park from the comfort of their vehicle and also take a rest at one of the many roadside picnic areas. For the active visitor, the park has thousands of miles of trails from dayhikes to backcountry explorations. The main attractions are all located on the grand loop road and here are some of the top reasons to visit the park.</p>
-        <a class="btn btn-danger" href="http://www.yellowstonenationalparklodges.com/lodging/" role="button">Click here to check out lodging!</a>
-      </div>
+        <div id="yellowStone">
+          <h4>You should consider going to:</h4>
+          <h1>Yellowstone National Park</h1>
+          <p>Yellowstone National Park is the flagship of the National Park Service and a favorite to millions of visitors each year. The park is a major destination for all members of the family. By driving the grand loop road, visitors can view the park from the comfort of their vehicle and also take a rest at one of the many roadside picnic areas. For the active visitor, the park has thousands of miles of trails from dayhikes to backcountry explorations. The main attractions are all located on the grand loop road and here are some of the top reasons to visit the park.</p>
+          <a class="btn btn-danger" href="http://www.yellowstonenationalparklodges.com/lodging/" role="button">Click here to check out lodging!</a>
+        </div>
 
-      <div id="newYork">
-        <h4>You should consider going to:</h4>
-        <h1>New York</h1>
-        <p>Home to the Empire State Building, Times Square, Statue of Liberty and other iconic sites, New York City is a fast-paced, globally influential center of art, culture, fashion and finance. The city’s 5 boroughs sit where the Hudson River meets the Atlantic Ocean, with the island borough of Manhattan at the “Big Apple's" core.</p>
-        <a class="btn btn-danger" href="http://www.kayak.com/flight-routes/United-States-US0/New-York-NYC" role="button">Click here to check out flights!</a>
+        <div id="newYork">
+          <h4>You should consider going to:</h4>
+          <h1>New York</h1>
+          <p>Home to the Empire State Building, Times Square, Statue of Liberty and other iconic sites, New York City is a fast-paced, globally influential center of art, culture, fashion and finance. The city’s 5 boroughs sit where the Hudson River meets the Atlantic Ocean, with the island borough of Manhattan at the “Big Apple's" core.</p>
+          <a class="btn btn-danger" href="http://www.kayak.com/flight-routes/United-States-US0/New-York-NYC" role="button">Click here to check out flights!</a>
+        </div>
       </div>
-</div>
-<!-- HIDDEN DESTINATIONS -->
+<!-- HIDDEN DESTINATIONS END-->
     </div>
-
   </body>
 </html>

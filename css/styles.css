@@ -28,3 +28,37 @@
 #yellowStone {
   color: #20aacf;
 }
+
+body {
+  font-family: helvetica;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+span {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.introQuest {
+  margin-bottom: 50px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+#resultsJumbo h1 {
+  font-size: 100px;
+  text-decoration: underline;
+}
+
+#resultsJumbo p {
+  margin-top: 40px;
+}
+
+.form-group p {
+  font-size: 15px;
+}

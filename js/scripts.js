@@ -29,7 +29,6 @@ $(document).ready(function() {
       alert("Please answer all the questions!");
     }
 
-
     event.preventDefault();
   });
 });
