@@ -12,3 +12,15 @@
 .hawaiiBG {
   background-image: url(../img/underwater.jpg);
 }
+
+.yellowStoneBG {
+  background-image: url(../img/);
+}
+
+.newYorkBG {
+  background-image: url(../img/newyork.jpg);
+}
+
+#newYork {
+  color: #ebff00;
+}
