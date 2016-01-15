@@ -8,3 +8,7 @@
 #resultsJumbo {
   display: none;
 }
+
+.hawaiiBG {
+  background-image: url(../img/underwater.jpg);
+}
